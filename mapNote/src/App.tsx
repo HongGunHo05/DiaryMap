@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css'
+import './App.css';
+import Login from './pages/Login.tsx';
 
 function App() {
 
@@ -7,12 +8,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={<div>123</div>}></Route>
-          <Route path={"/test"} element={<div>test2</div>}></Route>
+          <Route path={'/'} element={<Login />}></Route>
+          <Route path={'/test'} element={<div>test2</div>}></Route>
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
